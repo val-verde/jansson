@@ -577,7 +577,7 @@ set(JANSSON_INSTALL_LIB_DIR       lib CACHE PATH "Installation directory for lib
 set(JANSSON_INSTALL_BIN_DIR       bin CACHE PATH "Installation directory for executables")
 set(JANSSON_INSTALL_INCLUDE_DIR   include CACHE PATH "Installation directory for header files")
 
-if(WIN32 AND NOT CYGWIN)
+if(MSVC)
   set(DEF_INSTALL_CMAKE_DIR cmake)
 else()
   set(DEF_INSTALL_CMAKE_DIR lib/cmake/jansson)
